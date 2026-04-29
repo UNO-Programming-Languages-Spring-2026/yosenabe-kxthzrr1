@@ -17,4 +17,5 @@ mark(X,Y,X,Q+1) :- mark(X,Y,X,Q), target(X,Y,X,YY), Q < YY, cell(X,Q+1).
 mark(X,Y,X,Q-1) :- mark(X,Y,X,Q), target(X,Y,X,YY), YY < Q, cell(X,Q-1).
 
 :- mark(X1,Y1,P,Q), mark(X2,Y2,P,Q), (X1,Y1) != (X2,Y2).
+
 #show target/4.
